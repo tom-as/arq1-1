@@ -4,6 +4,12 @@
     outline: none !important;
     scroll-behavior: smooth;
 }
+
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+
 body
 {
     font-family: 'popins',sans-serif;
@@ -109,6 +115,7 @@ height: 100vh;
 .h100
 {
     height: 100%;
+    margin: auto;
 }
 
 .contentBox
@@ -137,7 +144,7 @@ height: 100vh;
     font-size: 1.3rem;
 
 }
-/*Section 1 -----------------------------------------------------------*/
+/*Section 1 -(Proyectos)----------------------------------------------------------*/
 .sec1
 {
     padding: 40px 0;
@@ -215,24 +222,61 @@ font-weight: 500;
 
 }
 /*Section 1 -----------------------------------------------------------*/
-/*Section 2 -----------------------------------------------------------*/
-
+/*Section 2 ------------( Nosotros) -----------------------------------------------*/
 .sec2
 {
-    position: relative;
-    background: url(https://merida.anahuac.mx/hubfs/AM_Blog_Conoce%20el%20plan%20de%20Arquitectura%20de%20la%20Ana%CC%81huac%20Mayab.png);
-    background-size: cover;
-    height: 100vh;
+    padding: 40px 0;
+    background: #000;
 }
 
-.sec2 h2{
-    font-weight: 760;
-    color:  #fff;
-    text-transform: uppercase;
+.content{
+    justify-content: center;
+}
+
+.container-nosotros{
+    height: 70%;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.titulo-nosotros
+{
+    color:#fff;
+    justify-content: center;
+}
+
+.titulo-nosotros h2
+{
     font-size: 2.5rem;
     margin-bottom: 20px;
-    
 }
+
+.titulo-nosotros p{
+    align-items: center;
+}
+
+.card{
+    margin:auto;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-body{
+    height: 155px;
+}
+
+.card-text{
+    height: 20%;
+}
+
+.card-title{
+    text-align: center;
+}
+
 /*Section 2 -----------------------------------------------------------*/
 /*Section blog -----------------------------------------------------------*/
 
