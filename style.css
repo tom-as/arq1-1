@@ -13,6 +13,7 @@
 body
 {
     font-family: 'popins',sans-serif;
+    margin: 20px auto 20px auto;
 }
 header{
     position: relative;
