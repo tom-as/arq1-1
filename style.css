@@ -368,7 +368,7 @@ font-weight: 500;
     
 }
 
-.contact-form input,
+.contact-form input:not(form-check-label),
 .contact-form textarea{
     width: 100%;
     border: none;
