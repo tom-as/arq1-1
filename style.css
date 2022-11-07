@@ -338,7 +338,7 @@ font-weight: 500;
     grid-template-columns: repeat(2 ,1fr);
     gap: 1.5rem;
     background: #000000 ;
-    border: 0px solid rgb(255, 255, 255, .5);
+    border: 1px solid rgb(255, 255, 255, .5);
     border-radius: 0.5rem;
     overflow: hidden;
     box-shadow: 0 0 3px .5px #ffffff;
@@ -367,7 +367,7 @@ font-weight: 500;
     row-gap: 1rem;
     
 }
-/**/
+
 .contact-form input,
 .contact-form textarea{
     width: 100%;
@@ -378,8 +378,8 @@ font-weight: 500;
     font-size: 0.9rem;
     color: #fff;
     border-radius: 0.4rem;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    box-shadow: 0 0 0px 0px #ffffff;
+    border: 0px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 3px .5px #ffffff;
     
 }
 
