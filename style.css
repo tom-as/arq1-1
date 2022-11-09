@@ -236,7 +236,7 @@ font-weight: 500;
   }
   
   @media(max-width:767px) {
-    .card-text {
+    .content p {
       font-size: 1.1vw;
       word-break: break-all;
     }
@@ -398,7 +398,7 @@ font-weight: 500;
     
 }
 
-.contact-form input[type= "checkbox"],
+.contact-form input:not([type= "checkbox"]),
 .contact-form textarea{
     width: 100%;
     border: none;
