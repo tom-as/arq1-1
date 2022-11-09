@@ -301,14 +301,14 @@ font-weight: 500;
 
 @media(min-width:768px) {
     .card-text {
-      font-size: 1vw;
+      font-size: 1vmax;
       word-break: break-all;
     }
   }
   
   @media(max-width:767px) {
     .card-text {
-      font-size: 0.7vw;
+      font-size: 0.7vmax;
       word-break: break-all;
     }
   }
