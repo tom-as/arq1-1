@@ -277,11 +277,26 @@ font-weight: 500;
 
 .card-text{
     height: 20%;
+
 }
 
 .card-title{
     text-align: center;
 }
+
+@media(min-width:768px) {
+    .card-text {
+      font-size: 1vw;
+      word-break: break-all;
+    }
+  }
+  
+  @media(max-width:767px) {
+    .card-text {
+      font-size: 0.7vw;
+      word-break: break-all;
+    }
+  }
 
 /*Section 2 -----------------------------------------------------------*/
 /*Section blog -----------------------------------------------------------*/
