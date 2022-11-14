@@ -362,15 +362,11 @@
         //     document.getElementById('contactBtn').addEventListener('click', addContact);
         // });
        let form = document.querySelector("form");
-       alert("Test0");
         form.addEventListener('submit', (e) => {
             
             e.preventDefault();
-            alert("Test1");
             document.querySelector("#sub").value = "Enviando...";
-            alert("Test1A");
             let data = new FormData(form);
-            alert("Test2");
             fetch('https://script.google.com/macros/s/AKfycbxTOwfLsOtkcWSHejHcUaPZhU8NozgmJvUtM6H0nr1Q_petFC4HCV7i00RGk7_AI64/exec', {
                     method: "POST",
                     body: data
@@ -381,7 +377,6 @@
                     document.querySelector("#sub").value = "Enviar consulta";
                     alert("Tus datos fueron guardados satisfactoriamente. Serás contactado a la brevedad posible");
                     document.getElementById("").reset();
-                    alert("TestF");
                 });
         })
     </script>
