@@ -23,6 +23,7 @@ header{
 p
 {
     font-size: 1.15rem;
+
 }
 /* Section Nav Bar ----------------------------------------------*/
 .navbar
@@ -182,15 +183,16 @@ height: 100vh;
 .placeBox .imgBx
 {
     width: 100%;
-    height: 100%;
+    height: 80%;
+
 }
 
 .placeBox .imgBx img
 {
     object-fit: cover;
     width: 100%;
-    height: 100%;
-    
+    height: 243px;
+
 }
 
 
@@ -228,9 +230,10 @@ font-weight: 500;
 
 }
 
+
 @media(min-width:768px) {
     .content p{
-      font-size: 1vw;
+      font-size: 0.8vw;
       word-break: break-all;
     }
   }
@@ -313,6 +316,20 @@ font-weight: 500;
     }
   }
 
+  @media(min-width:768px) {
+    .card-text-nosotros {
+      font-size: 0.75vmax;
+      word-break: break-all;
+    }
+  }
+  
+  @media(max-width:767px) {
+    .card-text-nosotros {
+      font-size: 0.vmax;
+      word-break: break-all;
+    }
+  }
+
 /*Section 2 -----------------------------------------------------------*/
 /*Section blog -----------------------------------------------------------*/
 
@@ -341,6 +358,7 @@ font-weight: 500;
     width: 100%;
     height: 70%;
     object-fit: cover;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 1);
 }
 
 .blogspot .content
@@ -354,6 +372,12 @@ font-weight: 500;
     padding: 0 0 0px;
     font-weight: 600;
 }
+
+.auto{  
+    -webkit-hyphens: auto;
+    hyphens: auto;  
+    -ms-hyphens: auto;
+    }  
 /*Section blog -----------------------------------------------------------*/
 /* Section del Contact---------------------------------------------*/
 .contact{
@@ -476,7 +500,12 @@ footer
     color:#fff;
 }
 /* Section del footer-------------------------------------------*/
-
+.footer-copyright p{
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+    color: #777;
+}
 @keyframes fade{
     0%{
         opacity: 0;
