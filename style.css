@@ -290,6 +290,7 @@ font-weight: 500;
     justify-content: center;
 }
 
+
 .card-body{
     height: 155px;
 }
@@ -446,10 +447,14 @@ font-weight: 500;
 .contact-form .send-buttom{
     border: none;
     outline: none;
-    background: #535353;
-    font-weight: 500;
+    background: #000000;
+    color: rgb(160, 160, 160);
+    font-weight: bold;
+    font-size: 20px;
     text-transform: uppercase;
     cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 3px .5px #ffffff;
 }
 
 .contact-form .send-buttom :hover{

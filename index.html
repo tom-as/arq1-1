@@ -287,20 +287,21 @@
     <section class="contact" id="contact">
         <div class="contact-container">
             <div class="form-container">
-                <h3>Contactanos</h3>
-                <form action="" class="contact-form">
-                    <input type="text" placeholder="Nombre" required>
-                    <input type="email" name="" id="" placeholder="Email: " required>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Escriba su mensaje"></textarea>
+                <h3 id="msg">Contactanos</h3>
+                <form action="" class="contact-form" id="contactForm" name="contactForm" autocomplete="off">
+                    <input id="contactName" type="text" name="name" placeholder="Nombre" required>
+                    <input id="contactEmail" type="email" name="email" name="" placeholder="Email: " required>
+                    <textarea id="contactMsg" name="phone" id="" cols="30" rows="10" placeholder="Escriba su mensaje"></textarea>
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
                         <label class="form-check-label" for="flexCheckChecked">
                           Términos y Condiciones
                         </label>
                       </div>
-                    <input type="submit" value="Enviar" class="send-buttom">
+                    <input type="submit" id="sub" class="send-buttom">
+
                 </form>
-                
+               
             </div>
             <div class="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d244.84077571148552!2d-58.79334183034584!3d-34.34610827098924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bb61e96bef78d9%3A0xb2580ea8d69882e2!2sArquitectura%201en1!5e0!3m2!1ses-419!2sar!4v1664798186745!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -337,6 +338,53 @@
             $('.navbar').toggleClass('scrolled', $(this).scrollTop() > $('.navbar').height());
         });
     </script>
+     <!--- Script del botón de contacto --->
+     <script>
+        // let contactos = [];
+
+        // const addContact = (ev)=>{
+        //     ev.preventDefault();
+        //     let nuevoUsuario = {
+        //         nombre: document.getElementById("contactName").value,
+        //         email: document.getElementById("contactEmail").value,
+        //         mensaje: document.getElementById("contactMsg").value
+        //     }
+        //     contactos.push(nuevoUsuario);
+        //     document.forms[0].reset();
+        //     console.warn("se añadió un contacto: ", {nuevoUsuario});
+
+        //     //saving to localStorage
+        //     localStorage.setItem('FormContacto', JSON.stringify(contactos) );
+        //     return contactos;
+        // }
     
+        // document.addEventListener('DOMContentLoaded', ()=>{
+        //     document.getElementById('contactBtn').addEventListener('click', addContact);
+        // });
+       let form = document.querySelector("form");
+       alert("Test0");
+        form.addEventListener('submit', (e) => {
+            
+            e.preventDefault();
+            alert("Test1");
+            document.querySelector("#sub").value = "Enviando...";
+            alert("Test1A");
+            let data = new FormData(form);
+            alert("Test2");
+            fetch('https://script.google.com/macros/s/AKfycbxTOwfLsOtkcWSHejHcUaPZhU8NozgmJvUtM6H0nr1Q_petFC4HCV7i00RGk7_AI64/exec', {
+                    method: "POST",
+                    body: data
+                })
+                .then(res => res.text())
+                .then(data => {
+                    document.querySelector("#msg").innerHTML = data;
+                    document.querySelector("#sub").value = "Enviar consulta";
+                    alert("Tus datos fueron guardados satisfactoriamente. Serás contactado a la brevedad posible");
+                    document.getElementById("").reset();
+                    alert("TestF");
+                });
+        })
+    </script>
+    <!--- Fin de script del botón de contacto --->
 </body>
 </html>
