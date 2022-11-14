@@ -447,6 +447,10 @@ font-weight: 500;
     height: 200px;
 }
 
+.contact-form ::placeholder{
+    opacity: 1;
+}
+
 .contact-form .send-buttom{
     border: none;
     outline: none;
