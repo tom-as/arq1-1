@@ -309,6 +309,9 @@ font-weight: 500;
       font-size: 1vmax;
       word-break: break-all;
     }
+    .card-title {
+        font-size:1.5vmax;
+    }
   }
   
   @media(max-width:767px) {
@@ -320,14 +323,14 @@ font-weight: 500;
 
   @media(min-width:768px) {
     .card-text-nosotros {
-      font-size: 0.75vmax;
+      font-size: 1.1vmax;
       word-break: break-all;
     }
   }
   
   @media(max-width:767px) {
     .card-text-nosotros {
-      font-size: 0.vmax;
+      font-size: 0.9vmax;
       word-break: break-all;
     }
   }
