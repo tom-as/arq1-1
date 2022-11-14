@@ -32,8 +32,14 @@ p
     transition: 0.3s;
     height: 50px;
     font-family:Arial, Helvetica, sans-serif;
-}
 
+}
+.navbar-izq a{
+    margin-left:26px;
+}
+.navbar a{
+    text-align:center;
+}
 .navbar.scrolled
 {
     background: #000 !important;
@@ -68,6 +74,7 @@ p
     color: rgba(225,225,225,1);
     font-size: 2rem;
     font-weight: 400;
+
 }
 /* Section Nav Bar ----------------------------------------------*/
 /* Section Banner ----------------------------------------------*/
@@ -235,19 +242,35 @@ font-weight: 500;
 @media(min-width:768px) {
     .content p{
       font-size: 0.8vw;
-      word-break: break-all;
+
     }
   }
   
   @media(max-width:767px) {
     .content p {
       font-size: 1.1vw;
-      word-break: break-all;
+
     }
   }
 
 /*Section 1 -----------------------------------------------------------*/
 /*Section 2 ------------( Nosotros) -----------------------------------------------*/
+
+p.manual {
+    -ms-hyphens: none;
+    -webkit-hyphens: none;
+    hyphens: none;
+    -ms-hyphenate-limit-chars: 6 3 2;
+    max-width: 480px;
+}
+
+p.auto {
+    max-width: 150px;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    -ms-hyphenate-limit-chars: 6 3 2;   
+}
 .sec2
 {
     padding: 40px 0;
@@ -319,6 +342,9 @@ font-weight: 500;
       font-size: 0.7vmax;
       word-break: break-all;
     }
+    .card-title {
+        font-size:1.3vmax;
+    }
   }
 
   @media(min-width:768px) {
@@ -337,13 +363,16 @@ font-weight: 500;
 
 /*Section 2 -----------------------------------------------------------*/
 /*Section blog -----------------------------------------------------------*/
+.alineate{
+    font-size: 150px;
+}
 
 .blog
 {
     position: relative;
     padding: 55px 0;
     background: #000;
-
+ 
 }
 
 .blogspot{

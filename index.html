@@ -19,8 +19,12 @@
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-            <div class="container">
+            <div class="navbar-izq">
+                <a href="#"><img src="img/1-1/favicon.png" alt="arq1-1" class="navbar navbar-expand-lg navbar-light bg-light fixed-top"/></a>
                 <a class="navbar-brand" href="#">Arquitectura 1:1</a>
+            </div>
+            <div class="container">
+                
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -202,7 +206,7 @@
                         <img src="img/cris.jpg" alt="hola" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">Cristian Ferrari</h5>
-                            <div class="card-text-nosotros">Proyectista - Director de Obra - Gestor</div>                        </div>
+                            <div class="card-text-nosotros">Director de Obra - Gestor</div>                        </div>
                     </div>
                 </div>
                 <div class="col-4">
@@ -210,7 +214,7 @@
                         <img src="img/Lean.jpg" alt="hola" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">Leandro Perez</h5>
-                            <div class="card-text-nosotros">Proyectista - Director de Obra - Gestor</div>
+                            <div class="card-text-nosotros">Director de Obra - Proyectista</div>
                                   
                         </div>
                     </div>
@@ -225,8 +229,10 @@
                 <div class="offset-sm-2 col-sm-8">
                     <div class="headerText text-center">
                         <h2>Servicios</h2>
+                        <div class="alineate">
                         <p>Trabajamos de acuerdo al presupuesto disponible, con el objetivo de garantizar lo pactado y la optimización máxima de los recursos existentes.   El cliente contará con la participación, asesoramiento, cordialidad y el mayor
                             de los respetos que una atención personalizada puede tener.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -237,8 +243,10 @@
                             <img src="img/1-1/secciones/Proyecto-arquitectonico1.jpg" class="img-fluid">
                             <div class="content">
                                 <h1>Anteproyecto y Proyecto</h1>
+                                <div class="alineate">
                                 <p>A partir de los requerimientos establecidos por el comitente se perfilará el anteproyecto, que se irá delineando durante las reuniones que fueran nec&shy;esarias presentando varias tipologías de reforma posible para
                                     explicitar los requisitos a cumplir en el proyecto.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -249,8 +257,8 @@
                             <img src="img/1-1/secciones/construccion.jpg" class="img-fluid">
                             <div class="content">
                                 <h1>Dirección De Obras</h1>
-                                <div class="auto">
-                                <p>Control de la materialización de la obra en un todo de acuerdo a la docum&shy;entación técnica, calidad y correcta utilización de los materiales. Seguimiento del cumplimiento de todas las cláusulas contractuales.
+                                <div class="alineate">
+                                <p>Control de la materialización de la obra en un todo de acuerdo a la docum&shy;entación técnica, calidad y correcta utilización de los materiales. Segui&shy;miento del cumplimiento de todas las cláusulas contractuales.
                                 </p></div>
 
                             </div>
@@ -263,7 +271,9 @@
                             <img src="img/1-1/secciones/plano.jpg" class="img-fluid">
                             <div class="content">
                                 <h1>Planos Municipales</h1>
-                                <p>Presentación, regularización y seguimiento ante el organismo correspondiente para que la obra se encuentre en condiciones legales.</p>
+                                <div class="alineate">
+                                    <p>Presentación, regularización y seguimiento ante el organismo correspondiente para que la obra se encuentre en condiciones legales.</p>
+                                </div>
 
                             </div>
                         </div>
@@ -275,7 +285,9 @@
                             <img src="img/1-1/secciones/computo.jpg" class="img-fluid">
                             <div class="content">
                                 <h1>Cómputos y Presupuestos</h1>
+                                <div class="alineate">
                                 <p>Armado de cómputos y presupuestos de acuerdo al proyecto aprobado por el comitente. En dicha etapa se acordará la mejor opción para el cliente, estudiando el mejor precio y calidad del mercado.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -290,7 +302,7 @@
                 <form action="" class="contact-form" id="contactForm" name="contactForm" autocomplete="off">
                     <input id="contactName" type="text" name="name" placeholder="Nombre" required>
                     <input id="contactEmail" type="email" name="email" name="" placeholder="Email" required>
-                    <textarea id="contactMsg" name="phone" id="" cols="30" rows="10" placeholder="Escriba su mensaje"></textarea>
+                    <textarea id="contactMsg" name="msg" id="" cols="30" rows="10" placeholder="Escriba su mensaje"></textarea>
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
                         <label class="form-check-label" for="flexCheckChecked">
@@ -339,27 +351,7 @@
     </script>
      <!--- Script del botón de contacto --->
      <script>
-        // let contactos = [];
 
-        // const addContact = (ev)=>{
-        //     ev.preventDefault();
-        //     let nuevoUsuario = {
-        //         nombre: document.getElementById("contactName").value,
-        //         email: document.getElementById("contactEmail").value,
-        //         mensaje: document.getElementById("contactMsg").value
-        //     }
-        //     contactos.push(nuevoUsuario);
-        //     document.forms[0].reset();
-        //     console.warn("se añadió un contacto: ", {nuevoUsuario});
-
-        //     //saving to localStorage
-        //     localStorage.setItem('FormContacto', JSON.stringify(contactos) );
-        //     return contactos;
-        // }
-    
-        // document.addEventListener('DOMContentLoaded', ()=>{
-        //     document.getElementById('contactBtn').addEventListener('click', addContact);
-        // });
        let form = document.querySelector("form");
         form.addEventListener('submit', (e) => {
             
@@ -375,7 +367,7 @@
                     document.querySelector("#msg").innerHTML = data;
                     document.querySelector("#sub").value = "Enviar consulta";
                     alert("Tus datos fueron guardados satisfactoriamente. Serás contactado a la brevedad posible");
-                    document.getElementById("").reset();
+                    document.getElementById("contactForm").reset();
                 });
         })
     </script>
