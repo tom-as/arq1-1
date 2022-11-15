@@ -557,3 +557,8 @@ footer
         opacity: 1;
     }
 }
+
+
+.botonTerminos{
+    cursor: pointer;
+}
